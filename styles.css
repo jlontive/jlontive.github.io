@@ -60,26 +60,27 @@ h2 {
     color: #333;
 }
 
-/* Project List */
-.project-list {
+/* Skills Section */
+.skills-group {
+    margin-bottom: 20px;
+}
+
+.skills-group h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills-group ul {
     list-style: none;
     padding: 0;
 }
 
-.project-list li {
+.skills-group ul li {
     background: #fff;
-    margin: 10px 0;
-    padding: 15px;
+    margin: 5px 0;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project-list li h3 {
-    margin: 0;
-}
-
-.project-list li p {
-    margin: 5px 0;
 }
 
 /* Footer */
