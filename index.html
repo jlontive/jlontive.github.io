@@ -45,13 +45,20 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p>Feel free to reach out to me via email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>Feel free to reach out to me via email: 
+                    <span id="email"></span>
+                 </p>
+                 <script>
+                     const email = ['jlontive', 'proton', 'me'];
+                     document.getElementById('email').innerHTML = 
+                         `<a href="mailto:${email[0]}@${email[1]}.${email[2]}">${email[0]}@${email[1]}.${email[2]}</a>`;
+                 </script>                                 
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>© 2024 Your Name. All rights reserved.</p>
+            <p>© 2024 Jared Ontiveros. All rights reserved.</p>
         </div>
     </footer>
 </body>
