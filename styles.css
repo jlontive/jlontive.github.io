@@ -104,6 +104,27 @@ h2 {
     color: #333;
 }
 
+/* About Page Image and Caption */
+.about-image-container {
+    text-align: center; /* Centers the image and caption */
+    margin: 20px 0;
+}
+
+.about-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-caption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+}
+
 /* Skills Page Styles */
 .skills-group {
     margin-bottom: 20px;
