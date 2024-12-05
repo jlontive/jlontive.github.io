@@ -187,3 +187,47 @@ footer {
 #contact a:hover {
     text-decoration: underline;
 }
+
+/* Timeline Section */
+#timeline {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.timeline-entry {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 4px solid #333;
+}
+
+.timeline-entry h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.timeline-entry p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.timeline-entry img.timeline-photo {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Positioning */
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+}
