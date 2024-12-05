@@ -331,3 +331,40 @@ footer {
 .red {
     background-color: #ad0c0d;
 }
+
+/* Default high-contrast mode is off */
+body {
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* High-contrast mode styles */
+body.high-contrast {
+    color: #fff; /* Text becomes white */
+    background-color: #000; /* Background becomes black */
+}
+
+header.high-contrast, footer.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+button#contrast-toggle {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button#contrast-toggle:hover {
+    background-color: #555;
+}
+
+button#contrast-toggle.high-contrast {
+    background-color: #fff;
+    color: #000;
+}

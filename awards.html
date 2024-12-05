@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awards & Recognitions</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
+    <header role="banner">
         <div class="container">
-            <h1>Awards & Recognitions</h1>
-            <nav>
+            <h1>Awards and Recognitions</h1>
+            <nav role="navigation" aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="timeline.html">Timeline</a></li>
-                    <li><a href="awards.html">Awards</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="awards.html">Awards</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="contrast-container">
+                <button id="contrast-toggle" aria-label="Toggle High Contrast Mode">High Contrast</button>
+            </div>
         </div>
-    </header>
+    </header>       
     <main>
         <section id="awards">
             <div class="container">
@@ -135,6 +136,7 @@
                 button.classList.toggle('active');
             });
         });
-    </script>    
+    </script>     
+    <script src="toggle.js" defer></script>
 </body>
 </html>
