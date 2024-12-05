@@ -71,6 +71,25 @@ h2 {
     color: #fff;
 }
 
+/* Default hyperlink color */
+a {
+    color: #fff; /* White text */
+    text-decoration: underline; /* Optional: underline for clarity */
+}
+
+/* Hover effect for hyperlinks */
+a:hover {
+    color: #ccc; /* Slightly lighter white for hover effect */
+    text-decoration: underline; /* Maintain underline on hover */
+}
+
+/* Active and focus state for hyperlinks */
+a:active, a:focus {
+    color: #ccc; /* Consistent with hover state */
+    text-decoration: underline;
+}
+
+
 /* About Page Styles */
 #about {
     margin: 50px 0;
