@@ -345,11 +345,38 @@ body.high-contrast {
     background-color: #000; /* Background becomes black */
 }
 
+/* Ensure all text becomes white in high contrast mode */
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast p,
+body.high-contrast a,
+body.high-contrast li,
+body.high-contrast strong { /* Properly added strong here */
+    color: #fff !important; /* Force white text */
+}
+
+/* Specific styles for Interesting Facts section */
+body.high-contrast .facts {
+    background-color: #111; /* Dark background for high contrast */
+    border-color: #555; /* Lighter border for better contrast */
+}
+
+body.high-contrast .facts h3 {
+    color: #fff; /* Ensure the header text is white */
+}
+
+body.high-contrast .facts ul li {
+    color: #ccc; /* Slightly lighter white for better readability */
+}
+
+/* High-contrast mode for headers */
 header.high-contrast, footer.high-contrast {
     background-color: #000;
     color: #fff;
 }
 
+/* High-contrast mode for buttons */
 button#contrast-toggle {
     background-color: #333;
     color: #fff;
@@ -367,4 +394,48 @@ button#contrast-toggle:hover {
 button#contrast-toggle.high-contrast {
     background-color: #fff;
     color: #000;
+}
+
+/* Ensure accordion buttons adjust in high contrast mode */
+body.high-contrast .accordion-btn {
+    background-color: #222; /* Darker button background */
+    color: #fff !important; /* Ensure text is white */
+    border: 1px solid #555; /* Add a visible border */
+}
+
+body.high-contrast .accordion-btn:hover {
+    background-color: #555; /* Lighter on hover */
+}
+
+/* Ensure accordion content text is readable */
+body.high-contrast .accordion-content {
+    background-color: #111; /* Dark background */
+    color: #fff !important; /* White text */
+}
+
+/* High-contrast mode for footer */
+footer.high-contrast {
+    background-color: #111;
+    color: #fff;
+}
+
+/* High-contrast mode for contact section */
+body.high-contrast #contact {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    border-color: #555; /* Border color adjusted for visibility */
+}
+
+body.high-contrast #contact h2 {
+    color: #fff; /* Ensure the header text is white */
+}
+
+body.high-contrast #contact p,
+body.high-contrast #contact a {
+    color: #fff; /* Ensure text and links are white */
+}
+
+body.high-contrast #contact a:hover {
+    text-decoration: underline;
+    color: #ccc; /* Slightly lighter text for hover */
 }
