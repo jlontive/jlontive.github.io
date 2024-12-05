@@ -125,28 +125,43 @@ h2 {
     font-style: italic;
 }
 
-/* Skills Page Styles */
-.skills-group {
+/* Skills Section */
+#skills {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+#skills h2 {
+    text-align: center;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.skills-group h3 {
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 15px; /* Space between the bubbles */
+    justify-content: left; /* left-align the bubbles */
+}
+
+.skill-bubble {
+    background: #f9f9f9;
     color: #333;
-    margin-bottom: 10px;
-}
-
-.skills-group ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-group ul li {
-    background: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Rounded edges */
+    padding: 10px 20px; /* Space inside each bubble */
+    font-size: 0.9em; /* Slightly smaller text */
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s; /* Smooth hover effects */
 }
+
+.skill-bubble:hover {
+    background: #0066cc; /* Change color on hover */
+    color: #fff;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
 
 /* Footer */
 footer {
