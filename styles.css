@@ -276,7 +276,8 @@ footer {
     text-align: left;
     padding: 15px;
     font-size: 1.1em;
-    color: #fff; /* Text remains white */
+    color: #fff; /* Text color remains white */
+    background: #333; /* Default black/gray background */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -285,11 +286,11 @@ footer {
 }
 
 .accordion-btn:hover {
-    background: #555;
+    background: #555; /* Slightly lighter gray on hover */
 }
 
 .accordion-btn.active {
-    background: #0066cc;
+    background: #0066cc; /* Blue background for active state */
     color: #fff;
 }
 
