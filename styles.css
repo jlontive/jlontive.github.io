@@ -276,8 +276,7 @@ footer {
     text-align: left;
     padding: 15px;
     font-size: 1.1em;
-    background: #333;
-    color: #fff;
+    color: #fff; /* Text remains white */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -317,4 +316,17 @@ footer {
     margin: 15px auto 0; /* Adds space above and centers the image */
     border-radius: 5px; /* Optional: Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Color-coded Buttons */
+.syracuse-orange {
+    background-color: #F76900;
+}
+
+.af-blue {
+    background-color: #00308F;
+}
+
+.red {
+    background-color: #ad0c0d;
 }
