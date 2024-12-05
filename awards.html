@@ -26,27 +26,90 @@
         <section id="awards">
             <div class="container">
                 <h2>My Awards & Recognitions</h2>
-                <ul class="awards-list">
-                    <li>Dean's List, Syracuse University - 2023</li>
-                    <li>National Defense Service Medal - 2018</li>
-                    <li>Distinguished Graduate, USAF Airman Leadership School (NCO Course) - 2018</li>
-                    <li>AF Longevity Service - 2017</li>
-                    <li>AF Commendation Medal - 2016-2019</li>
-                    <li>Meritorious Unit Award (2) - 2016-2019</li>
-                    <li>AF Good Conduct Medal - 2016</li>
-                    <li>Diploma in Levantine Arabic, Defense Language Institute (DLI) - 2015</li>
-                    <li>Honor Graduate, USAF Basic Military Training - 2013</li>
-                    <li>Eagle Scout - 2012</li>
-                    <li>High School Diploma, Lansing High School (USD469) - 2012</li>
-                    <li>Black Belt, World Tae Kwon Do Federation - 2005</li>
-                </ul>
+                <p class="centered-text">Click on an award or recognition to learn more about its significance.</p>
+                <p class="disclaimer">Disclaimer: Most of my military awards are participation trophies.</p>
+                <!-- Awards List -->
+                <div class="accordion">
+                    <button class="accordion-btn">Dean's List, College of Professional Studies, Syracuse University - 2023</button>
+                    <div class="accordion-content">
+                        <p>Dean’s List recognition, the minimum semester grade point average must be 3.40 or higher, must have earned a minimum of 12 graded credits and must have no missing or incomplete grades. This dean’s list honors Syracuse University part-time students who have excelled as emerging scholars and achieved exceedingly high grade point averages.</p>
+                    </div>
+        
+                    <button class="accordion-btn">National Defense Service Medal - 2018</button>
+                    <div class="accordion-content">
+                        <p>The National Defense Service Medal (NDSM) was a service award of the United States Armed Forces established by President Dwight D. Eisenhower in 1953. It was awarded to every member of the U.S. Armed Forces who served during any one of four specified periods of armed conflict or national emergency from June 27, 1950 through December 31, 2022. Combat or "in theater" service is not a requirement for the award.</p>
+                    </div>
+        
+                    <button class="accordion-btn">Distinguished Graduate, USAF Airman Leadership School - 2018</button>
+                    <div class="accordion-content">
+                        <p>Presented to the top 10% of graduates with the highest overall average in all graded areas, and demonstrated a high level of leadership skills.</p>
+                    </div>
+        
+                    <button class="accordion-btn">AF Longevity Service - 2017</button>
+                    <div class="accordion-content">
+                        <p>PThe Air and Space Longevity Service Award is awarded for completing four years of Active, Air Force Reserve, or Air National Guard service.</p>
+                    </div>
+        
+                    <button class="accordion-btn">AF Commendation Medal – 2016-2019</button>
+                    <div class="accordion-content">
+                        <p>This medal was authorized by the Secretary of the Air Force on March 28, 1958, for award to members of the armed forces of the United States who, while serving in any capacity with the Air Force after March 24, 1958, shall have distinguished themselves by meritorious achievement and service.</p>
+                    </div>
+        
+                    <button class="accordion-btn">Meritorious Unit Award (2) – 2016-2019</button>
+                    <div class="accordion-content">
+                        <p>In March 2004, the Secretary of the Air Force approved the Meritorious Unit Award to recognize organizations for outstanding heroism in combat as well as outstanding achievement or service in direct support of combat operations.</p>
+                    </div>
+        
+                    <button class="accordion-btn">AF Good Conduct Medal - 2016</button>
+                    <div class="accordion-content">
+                        <p>It is awarded to Air Force enlisted personnel for exemplary conduct during a three-year period of active military service, (or for a one-year period of service during a time of war). Persons awarded this medal must have had character and efficiency ratings of excellent or higher throughout the qualifying period, including time spent in attendance at service schools, and there must have been no convictions of court martial during this period.</p>
+                    </div>
+        
+                    <button class="accordion-btn">Diploma in Levantine Arabic, Defense Language Institute – 2015</button>
+                    <div class="accordion-content">
+                        <p>Completed intensive training in Levantine Arabic, achieving proficiency in speaking, reading, and writing.</p>
+                    </div>
+        
+                    <button class="accordion-btn">Honor Graduate, USAF Basic Military Training - 2013</button>
+                    <div class="accordion-content">
+                        <p>Authorized by the Chief of Staff, United States Air Force on April 3, 1976, this ribbon is awarded to honor graduates of basic military training who, after July 29, 1976, have demonstrated excellence in all phases of academic and military training and limited to the top 10 percent of the training flight.</p>
+                    </div>
+        
+                    <button class="accordion-btn">Eagle Scout - 2012</button>
+                    <div class="accordion-content">
+                        <p>Eagle Scout is the highest rank attainable in the Scouts BSA program by the Boy Scouts of America (BSA). Since its inception in 1911, only four percent of Scouts have earned this rank after a lengthy review process.</p>
+                    </div>
+        
+                    <button class="accordion-btn">High School Diploma, Lansing High School (USD469) - 2012</button>
+                    <div class="accordion-content">
+                        <p>Graduated with a focus on academic excellence and community involvement.</p>
+                    </div>
+        
+                    <button class="accordion-btn">Black Belt, World Tae Kwon Do Federation - 2005</button>
+                    <div class="accordion-content">
+                        <p>Achieved black belt rank, demonstrating proficiency and dedication in Tae Kwon Do martial arts.</p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </section>        
     </main>
     <footer>
         <div class="container">
             <p>© 2024 Jared Ontiveros. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+    
+                // Toggle content visibility
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    
+                // Adjust button appearance
+                button.classList.toggle('active');
+            });
+        });
+    </script>    
 </body>
 </html>
